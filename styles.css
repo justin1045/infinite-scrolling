@@ -41,8 +41,8 @@ body {
 }
 
 .mode {
-    width: 50px;
-    height: 25px;
+    min-width: 3.1rem;
+    height: 1.5rem;
     border: 2px solid black;
     border-radius: 1rem;
     position: relative;
@@ -60,9 +60,8 @@ body {
 }
 
 .cover {
-    width: 20px;
-    height: 20px;
-    padding-top: 10px;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     background-color: black;
     position: absolute;
@@ -72,4 +71,5 @@ body {
 .move-right {
     transform: translateX(118%);
 }
+
 
