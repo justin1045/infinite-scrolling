@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.photoDiv {
+    width: 280px;
+    height: 280px;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+
+.photoDiv > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.photoDiv > img:hover{
+    transform: scale(1.1);
+}
