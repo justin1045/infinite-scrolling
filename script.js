@@ -1,9 +1,11 @@
-const ACCESS_KEY = "9JsuQ5MT2n63GJvGgqgI4BnkKaXfwpsgcggfWaIX82s";
+const ACCESS_KEY = "SFvUDN7ArbYu-NTaI7JDWxePxkd_39gwx4koUm4VS98";
 const basePath = `https://api.unsplash.com/photos/random`;
 
 const resultContainer = document.querySelector(".result-container");
 const loader = document.querySelector(".loader");
-
+const mode = document.querySelector(".mode");
+const cover = document.querySelector(".cover");
+const body = document.querySelector("body");
 let loaded;
 
 
@@ -53,3 +55,21 @@ window.addEventListener("scroll", (e)=> {
 });
 
 getPhotos();
+
+mode.addEventListener("click", (e) => {
+    cover.classList.toggle("move-right");
+   if (cover.classList.contains("move-right")) {
+
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+    mode.style.backgroundColor = "gray";
+
+   } else {
+
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+    mode.style.backgroundColor = "white";
+
+   }
+    
+})
