@@ -48,7 +48,7 @@ function displayPhotos (arr) {
 }
 
 window.addEventListener("scroll", (e)=> {
-    if (window.scrollY + window.innerHeight >= document.body.offsetHeight && loaded) {
+    if (Math.ceil(window.scrollY) + window.innerHeight >= document.body.offsetHeight && loaded) {
         getPhotos();
     }
 
